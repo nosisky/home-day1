@@ -6,6 +6,7 @@ const data = {
 			const output = result.length;
 			return output;
 		} 
+		//Check if input data is a function
 		else if(typeof(data) === "function") {
 			return data(true);
 		}
@@ -24,8 +25,11 @@ const data = {
 		else if(typeof(data) === "boolean") {
 			return data;
 		}
-		//Check if input data is a function
 		
+		else {
+			const output = "no value";
+			return output;
+		}
 	} 
 }
 
