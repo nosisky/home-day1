@@ -2,7 +2,9 @@ var check = require("../app/library.js");
 'use strict'
 describe("Data types tests ", function() {
   describe("Case for some falsy values", function() {
-
+    it("should return 'no value' for null", function() {
+      expect(check.dataTypes(null)).toEqual('no value');
+    });
     
 
   });
