@@ -3,17 +3,7 @@ var check = require("../app/library.js");
 describe("Data types tests ", function() {
   describe("Case for some falsy values", function() {
 
-    it("should return 'no value' for null", function() {
-      expect(check.dataTypes(null)).toEqual('no value');
-    });
-
-    it("should return 'no value' for undefined", function() {
-      expect(check.dataTypes(undefined)).toEqual('no value');
-    });
     
-    it("should return 'no value' for empty arguments", function() {
-    	expect(check.dataTypes()).toEqual('no value');
-    });
 
   });
 
