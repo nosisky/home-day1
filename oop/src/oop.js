@@ -1,4 +1,4 @@
-   class Person{
+  class Person{
     constructor(firstname, lastname, age) {
       this.firstName = firstname;
       this.lastName = lastname;
@@ -11,13 +11,17 @@
       this.getName = () => {
         return [this.firstName, this.lastName].join(" ");
       }
+      this.getAge = () => {
+        return this.age;
+      }
       this.getData = () => {
     return ["Hi! I'm ", this.firstName,  " ", this.lastName, " and I\'m ", this.age,  " years old."].join("");
-  }
-    }
+ }
+}
 }
 
 
+   
 /***********************************
 *          Inheritance            *
 * *********************************/
@@ -35,7 +39,4 @@
          return ["Hi ! I'm ", this.firstName, " ", this.lastName, ", I'm ", this.age, " year old and I'm a developer with a skill level of ", this.skills, " i earn ", this.pay +"$", "Monthly"].join("");
 }
 }
-
-
-//var Rasaq = new Developer("Rasaq", "Nasirudeen", 17,"Intermediate", 2000);
 
