@@ -7,7 +7,7 @@ describe("Data types tests ", function() {
     });
      it("should return 'no value' for undefined", function() {
       expect(check.dataTypes(undefined)).toEqual('no value');
-      
+     });
     it("should return 'no value' for empty arguments", function() {
       expect(check.dataTypes()).toEqual('no value');
     });
@@ -100,7 +100,5 @@ describe("Data types tests ", function() {
       };
       expect(check.dataTypes(helloworld)).toBe('hello world')
     });
-
-    
   });
 });

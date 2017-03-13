@@ -1,3 +1,24 @@
+'use strict'
+const num = {
+	func: function(num) {
+		//check if num is less than 100
+		num = Number(num); //performing type coercion
+		if (num < 100) {
+				var output = "less than 100";
+				return output;
+			}
+			//check if num is equal to 100
+			else if (num === 100) {
+				var output = "equal to 100";
+				return output;
+			}
+			// if either of the above is false definitely its more than 100
+			else {
+				var output = "more than 100";
+				return output;
+			}
+	}
+}
 const data = {
 	dataTypes: function(data) {
 		//Check if input data is a string!
